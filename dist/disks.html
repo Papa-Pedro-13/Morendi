@@ -10,6 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide-core.min.css" integrity="sha512-cSogJ0h5p3lhb//GYQRKsQAiwRku2tKOw/Rgvba47vg0+iOFrQ94iQbmAvRPF5+qkF8+gT7XBct233jFg1cBaQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.min.css">
   <title>Кованые диски</title>
@@ -47,7 +48,7 @@
     <button class="icon-menu header__burger"></button>
 
   </div>
-  <a class="header__contacts" href="#">Cвязаться с нами
+  <a class="header__contacts" href="#" data-type="popup-1">Cвязаться с нами
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M2 6L13 6M13 6L8.14706 1M13 6L8.14706 11" stroke="white" stroke-opacity="0.8"/>
     </svg>
@@ -83,7 +84,7 @@
 
 
     <div class="mobile-menu__contacts">
-      <h2 class="mobile-menu__phone">8 495 796 00 96</h2>
+      <h2 data-aos="fade-right" class="mobile-menu__phone">8 495 796 00 96</h2>
       <p class="text-large mobile-menu__email">detailing@morendi.ru</p>
       <p class="text-small mobile-menu__address">
         Овражная ул., 12, рабочий посёлок Новоивановское
@@ -116,28 +117,32 @@
       <main class="page">
         <section class="title-block">
           <div class="title-block__container">
-            <h1 class="title-block__headline">Кованые диски</h1>
+            <h1 class="title-block__headline" data-aos="fade-right">
+              Кованые диски
+            </h1>
           </div>
         </section>
         <section class="intro">
           <div class="intro__container">
             <img src="./images/disks-intro-bg.png" alt="" class="intro__bg">
-            <p class="text-large intro__title wide">
+            <p class="text-large intro__title wide" data-aos="fade-right">
               Кованые диски на заказ — идеальное сочетание стиля и технологий.
               Проектирование, подбор и установка кованых дисков на авто любого
               класса
             </p>
-            <p class="text-small intro__desc wide">
+            <p class="text-small intro__desc wide" data-aos="fade-left">
               Мы предлагаем индивидуальные решения по установке кованых дисков:
               точный подбор размеров, дизайна и покрытия. Кованые диски не
               только подчёркивают стиль, но и улучшают управляемость автомобиля
             </p>
-            <button class="btn intro__btn">Заказать диски</button>
+            <button class="btn intro__btn" data-aos="fade-right">
+              Заказать диски
+            </button>
           </div>
         </section>
         <section class="numeric">
           <div class="numeric__container">
-            <h2 class="numeric__headline">
+            <h2 data-aos="fade-right" class="numeric__headline">
               Преимущества <br>
               кованых дисков
             </h2>
@@ -202,8 +207,10 @@
         <section class="advantages">
           <div class="advantages__container">
             <div class="advantages__text-block">
-              <h2 class="advantages__title">Почему выбирают Morendi:</h2>
-              <ul class="advantages__list">
+              <h2 data-aos="fade-right" class="advantages__title">
+                Почему выбирают Morendi:
+              </h2>
+              <ul class="advantages__list" data-aos="fade-left">
                 <li class="text-large advantages__item">
                   Снижение веса и нагрузок на подвеску
                 </li>
@@ -217,12 +224,12 @@
                   Возможность полной кастомизации
                 </li>
               </ul>
-              <p class="text-medium advantages__desc">
+              <p data-aos="fade-right" class="text-medium advantages__desc">
                 Кованые диски Morendi — визитная карточка вашего автомобиля
               </p>
             </div>
             <div class="advantages__video-block video-block">
-              <video class="video-block__player" poster="./images/poster3.jpg" loop controls>
+              <video data-aos="fade-left" class="video-block__player" poster="./images/poster3.jpg" loop controls>
                 <source src="./static/video1.mp4" type="video/mp4">
                 Ваш браузер не поддерживает видео.
               </video>
@@ -238,7 +245,7 @@
 
         <section class="portfolio">
   <div class="portfolio__container">
-    <h2 class="portfolio__headline">Портфолио</h2>
+    <h2 data-aos="fade-right" class="portfolio__headline">Портфолио</h2>
     <div class="splide portfolio__slider" role="group">
       <div class="splide__arrows">
         <button class="splide__arrow splide__arrow--prev">
@@ -297,10 +304,10 @@
 
         <section class="offer">
           <div class="offer__container">
-            <h2 class="offer__headline">
+            <h2 data-aos="fade-right" class="offer__headline">
               Закажите индивидуальный дизайн дисков
             </h2>
-            <p class="text-small offer__desc">
+            <p data-aos="fade-up" class="text-small offer__desc">
               Увеличение мощности за счет перепрограммирования блока управления
               двигателем без внесения конструктивных изменений в аппаратную
               часть (железо) автомобиля
@@ -311,7 +318,7 @@
         <section class="stages">
           <div class="stages__container">
             <div class="stages__top">
-              <h2 class="stages__headline">
+              <h2 data-aos="fade-right" class="stages__headline">
                 Этапы производства кованых дисков
               </h2>
               <p class="text-small stages__desc">
@@ -321,7 +328,7 @@
               </p>
             </div>
             <div class="accordion stages__accordion">
-  <div class="accordion__item">
+  <div class="accordion__item" data-aos="fade-right">
     <h3 class="accordion__header">От идеи до точной модели</h3>
     <div class="text-small accordion__content">
       Все начинается с идеи, которая превращается в фотореалистичный рендер на
@@ -332,7 +339,7 @@
     </div>
   </div>
 
-  <div class="accordion__item">
+  <div class="accordion__item" data-aos="fade-left">
     <h3 class="accordion__header">
       Идеальная заготовка для точного результата
     </h3>
@@ -345,7 +352,7 @@
     </div>
   </div>
 
-  <div class="accordion__item">
+  <div class="accordion__item" data-aos="fade-right">
     <h3 class="accordion__header">
       Идеальная заготовка для точного результата
     </h3>
@@ -358,7 +365,7 @@
     </div>
   </div>
 
-  <div class="accordion__item">
+  <div class="accordion__item" data-aos="fade-left">
     <h3 class="accordion__header">
       Токарные работы: точность и индивидуальность
     </h3>
@@ -370,7 +377,7 @@
       гарантируя идеальную посадку и надежность диска
     </div>
   </div>
-  <div class="accordion__item">
+  <div class="accordion__item" data-aos="fade-right">
     <h3 class="accordion__header">
       Токарные работы: точность и индивидуальность
     </h3>
@@ -383,7 +390,7 @@
     </div>
   </div>
 
-  <div class="accordion__item">
+  <div class="accordion__item" data-aos="fade-left">
     <h3 class="accordion__header">Шлифовка и финишная обработка</h3>
     <div class="text-small accordion__content">
       Все начинается с идеи, которая превращается в фотореалистичный рендер на
@@ -393,7 +400,7 @@
       гарантируя идеальную посадку и надежность диска
     </div>
   </div>
-  <div class="accordion__item">
+  <div class="accordion__item" data-aos="fade-right">
     <h3 class="accordion__header">
       Окончательная очистка и подготовка к покраске
     </h3>
@@ -406,7 +413,7 @@
     </div>
   </div>
 
-  <div class="accordion__item">
+  <div class="accordion__item" data-aos="fade-left">
     <h3 class="accordion__header">
       Финальная обработка и лакокрасочное покрытие
     </h3>
@@ -425,20 +432,22 @@
         <section class="advantages">
           <div class="advantages__container">
             <div class="advantages__text-block">
-              <h2 class="advantages__title">Видео процесса</h2>
-              <p class="text-large advantages__subtitle">
+              <h2 data-aos="fade-right" class="advantages__title">
+                Видео процесса
+              </h2>
+              <p data-aos="fade-left" class="text-large advantages__subtitle">
                 Увеличение мощности за счет перепрограммирования блока
                 управления двигателем без внесения конструктивных изменений в
                 аппаратную часть (железо) автомобиля
               </p>
-              <p class="text-small advantages__label">
+              <p data-aos="fade-right" class="text-small advantages__label">
                 Увеличение мощности за счет перепрограммирования блока
                 управления двигателем без внесения конструктивных изменений в
                 аппаратную часть (железо) автомобиля
               </p>
             </div>
             <div class="advantages__video-block video-block">
-              <video class="video-block__player" poster="./images/poster4.jpg" loop controls>
+              <video data-aos="fade-left" class="video-block__player" poster="./images/poster4.jpg" loop controls>
                 <source src="./static/video1.mp4" type="video/mp4">
                 Ваш браузер не поддерживает видео.
               </video>
@@ -453,7 +462,7 @@
         </section>
         <section class="popular-reviews">
   <div class="popular-reviews__container">
-    <h2 class="popular-reviews__headline">
+    <h2 data-aos="fade-right" class="popular-reviews__headline">
       Отзывы блогеров и медийных личностей о нас
     </h2>
     <div class="splide popular-reviews__slider">
@@ -543,7 +552,9 @@
 </section>
  <section class="reviews">
   <div class="reviews__container">
-    <h2 class="reviews__headline">Отзывы наших постоянных клиентов</h2>
+    <h2 data-aos="fade-right" class="reviews__headline">
+      Отзывы наших постоянных клиентов
+    </h2>
     <div class="reviews__yandex-block yandex-block">
       <div class="yandex-block__logo">
         <img src="../images/yandex-logo.svg" alt="">
@@ -668,7 +679,7 @@
         <section class="contact-block">
   <div class="contact-block__container">
     <div class="contact-block__info">
-      <h2 class="contact-block__headline">
+      <h2 data-aos="fade-right" class="contact-block__headline">
         Свяжитесь <br>
         с нами
       </h2>
@@ -677,7 +688,7 @@
       </p>
       <p class="contact-block__phone">8 495 796 00 96</p>
     </div>
-    <form class="contact-block__form">
+    <form class="contact-block__form" data-aos="fade-left">
       <input class="contact-block__input" type="text" class="form__input" placeholder="Ваше имя" required>
       <input class="contact-block__input" type="text" class="form__input" placeholder="Телефон" required>
       <select class="contact-block__select" name="" id="" required>
@@ -726,7 +737,7 @@
     </ul>
 
     <div class="footer__contacts">
-      <h2 class="footer__phone">8 495 796 00 96</h2>
+      <h2 data-aos="fade-right" class="footer__phone">8 495 796 00 96</h2>
       <p class="text-large footer__email">detailing@morendi.ru</p>
       <p class="text-small footer__address">
         Овражная ул., 12, рабочий посёлок Новоивановское
@@ -765,16 +776,49 @@
     </div>
 
     <div class="popup" data-popup="popup-1" data-close-overlay>
-    <div class="popup__wrapper" data-close-overlay>
-        <div class="popup__content">
-            <button class="button-close popup__close" type="button">x</button>
-            <div class="popup__body">
-                <h2>Базовый пример модального окна</h2>
-            </div>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content">
+      <div class="popup__container">
+        <button class="button-close popup__close" type="button">x</button>
+        <div class="popup__body">
+          <h2 data-aos="fade-right" class="popup__headline">
+            Заполните <br>
+            форму
+          </h2>
+          <p class="text-small popup__text">
+            и наш специалист свяжется с вами в течении полу часа
+          </p>
+          <form class="contact-block__form">
+            <input class="contact-block__input" type="text" class="form__input" placeholder="Ваше имя" required>
+            <input class="contact-block__input" type="text" class="form__input" placeholder="Телефон" required>
+            <select class="contact-block__select" name="" id="" required>
+              <option value="" disabled="disabled" selected="selected" hidden>
+                Как с вами связаться?
+              </option>
+              <option value="phone">Телефон</option>
+              <option value="email">Email</option>
+              <option value="telegram">Telegram</option>
+              <option value="whatsapp">WhatsApp</option>
+            </select>
+            <label class="text-small checkbox contact-block__checkbox">
+              <input class="checkbox__input" type="checkbox" name="agreement" required>
+              <span class="checkbox__box"></span>
+              Согласен на обработку персональных данных
+            </label>
+            <button class="btn contact-block__btn" type="submit">
+              Отправить
+            </button>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 </div>
- <script src="js/app.min.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="js/app.min.js"></script>
 
   </body>
 </html>

@@ -10,6 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide-core.min.css" integrity="sha512-cSogJ0h5p3lhb//GYQRKsQAiwRku2tKOw/Rgvba47vg0+iOFrQ94iQbmAvRPF5+qkF8+gT7XBct233jFg1cBaQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.min.css">
   <title>Наши филиалы</title>
@@ -47,7 +48,7 @@
     <button class="icon-menu header__burger"></button>
 
   </div>
-  <a class="header__contacts" href="#">Cвязаться с нами
+  <a class="header__contacts" href="#" data-type="popup-1">Cвязаться с нами
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M2 6L13 6M13 6L8.14706 1M13 6L8.14706 11" stroke="white" stroke-opacity="0.8"/>
     </svg>
@@ -83,7 +84,7 @@
 
 
     <div class="mobile-menu__contacts">
-      <h2 class="mobile-menu__phone">8 495 796 00 96</h2>
+      <h2 data-aos="fade-right" class="mobile-menu__phone">8 495 796 00 96</h2>
       <p class="text-large mobile-menu__email">detailing@morendi.ru</p>
       <p class="text-small mobile-menu__address">
         Овражная ул., 12, рабочий посёлок Новоивановское
@@ -126,7 +127,7 @@
         <section class="branches">
           <div class="branches__container">
             <div class="branches__top">
-              <h2 class="branches__headline">
+              <h2 data-aos="fade-right" class="branches__headline">
                 <img src="./images/russia.png" alt="" class="branches__img">
                 Россия
               </h2>
@@ -461,7 +462,7 @@
         <section class="contact-block">
   <div class="contact-block__container">
     <div class="contact-block__info">
-      <h2 class="contact-block__headline">
+      <h2 data-aos="fade-right" class="contact-block__headline">
         Свяжитесь <br>
         с нами
       </h2>
@@ -470,7 +471,7 @@
       </p>
       <p class="contact-block__phone">8 495 796 00 96</p>
     </div>
-    <form class="contact-block__form">
+    <form class="contact-block__form" data-aos="fade-left">
       <input class="contact-block__input" type="text" class="form__input" placeholder="Ваше имя" required>
       <input class="contact-block__input" type="text" class="form__input" placeholder="Телефон" required>
       <select class="contact-block__select" name="" id="" required>
@@ -519,7 +520,7 @@
     </ul>
 
     <div class="footer__contacts">
-      <h2 class="footer__phone">8 495 796 00 96</h2>
+      <h2 data-aos="fade-right" class="footer__phone">8 495 796 00 96</h2>
       <p class="text-large footer__email">detailing@morendi.ru</p>
       <p class="text-small footer__address">
         Овражная ул., 12, рабочий посёлок Новоивановское
@@ -558,16 +559,49 @@
     </div>
 
     <div class="popup" data-popup="popup-1" data-close-overlay>
-    <div class="popup__wrapper" data-close-overlay>
-        <div class="popup__content">
-            <button class="button-close popup__close" type="button">x</button>
-            <div class="popup__body">
-                <h2>Базовый пример модального окна</h2>
-            </div>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content">
+      <div class="popup__container">
+        <button class="button-close popup__close" type="button">x</button>
+        <div class="popup__body">
+          <h2 data-aos="fade-right" class="popup__headline">
+            Заполните <br>
+            форму
+          </h2>
+          <p class="text-small popup__text">
+            и наш специалист свяжется с вами в течении полу часа
+          </p>
+          <form class="contact-block__form">
+            <input class="contact-block__input" type="text" class="form__input" placeholder="Ваше имя" required>
+            <input class="contact-block__input" type="text" class="form__input" placeholder="Телефон" required>
+            <select class="contact-block__select" name="" id="" required>
+              <option value="" disabled="disabled" selected="selected" hidden>
+                Как с вами связаться?
+              </option>
+              <option value="phone">Телефон</option>
+              <option value="email">Email</option>
+              <option value="telegram">Telegram</option>
+              <option value="whatsapp">WhatsApp</option>
+            </select>
+            <label class="text-small checkbox contact-block__checkbox">
+              <input class="checkbox__input" type="checkbox" name="agreement" required>
+              <span class="checkbox__box"></span>
+              Согласен на обработку персональных данных
+            </label>
+            <button class="btn contact-block__btn" type="submit">
+              Отправить
+            </button>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 </div>
- <script src="js/app.min.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="js/app.min.js"></script>
 
   </body>
 </html>

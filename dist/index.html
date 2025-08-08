@@ -10,6 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide-core.min.css" integrity="sha512-cSogJ0h5p3lhb//GYQRKsQAiwRku2tKOw/Rgvba47vg0+iOFrQ94iQbmAvRPF5+qkF8+gT7XBct233jFg1cBaQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.min.css">
   <title>Главная</title>
@@ -47,7 +48,7 @@
     <button class="icon-menu header__burger"></button>
 
   </div>
-  <a class="header__contacts" href="#">Cвязаться с нами
+  <a class="header__contacts" href="#" data-type="popup-1">Cвязаться с нами
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M2 6L13 6M13 6L8.14706 1M13 6L8.14706 11" stroke="white" stroke-opacity="0.8"/>
     </svg>
@@ -83,7 +84,7 @@
 
 
     <div class="mobile-menu__contacts">
-      <h2 class="mobile-menu__phone">8 495 796 00 96</h2>
+      <h2 data-aos="fade-right" class="mobile-menu__phone">8 495 796 00 96</h2>
       <p class="text-large mobile-menu__email">detailing@morendi.ru</p>
       <p class="text-small mobile-menu__address">
         Овражная ул., 12, рабочий посёлок Новоивановское
@@ -116,17 +117,18 @@
       <main class="page">
         <section class="hero">
           <div class="hero__container">
-            <div class="hero__headline">
+            <div class="hero__headline" data-aos="fade-right">
               <h1 class="hero__h1">Тюнинг</h1>
               <h1 class="hero__h1">ателье</h1>
             </div>
             <div class="label-large hero__subtitle">2025 © Morendi</div>
-            <p class="text-large hero__info">
+            <p class="text-large hero__info" data-aos="fade-up">
               Morendi — ваш выбор в мире премиального тюнинга автомобилей.
               Чип-тюнинг, спортивные тормозные системы, кованые диски и
               детейлинг — всё в одном месте
             </p>
-            <a href="#" class="btn hero__link">Заказать тюнинг </a>
+            <a href="#" data-type="popup-1" class="btn hero__link" data-aos="fade-left">Заказать тюнинг
+            </a>
             <a href="#footer" class="hero__anchor">
               <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.8" d="M8.5 0V17M8.5 17L16 9.5M8.5 17L1 9.5" stroke="white" stroke-opacity="0.5" stroke-width="1.5"/>
@@ -136,8 +138,8 @@
         </section>
         <section class="about">
           <div class="about__container">
-            <p class="label-large about__title">О нас</p>
-            <p class="text-large about__text">
+            <p class="label-large about__title" data-aos="fade-right">О нас</p>
+            <p class="text-large about__text" data-aos="fade-up">
               Профессиональный чип-тюнинг двигателя, калибровка трансмиссий.
               Установка премиальных тормозных систем. Подбор и монтаж кованых
               дисков. Премимум детейлинг мирового уровня
@@ -150,7 +152,9 @@
         <section class="product-cards">
           <a class="product-card" href="./tuning.html">
             <img class="product-card__bg" src="./images/product-card-bg1.png" alt="">
-            <h3 class="product-card__title">Чип-тюнинг</h3>
+            <h3 data-aos="fade-right" class="product-card__title">
+              Чип-тюнинг
+            </h3>
             <p class="text-small product-card__subtitle">
               Профессиональная настройка двигателя, которая увеличивает мощность
               и крутящий момент без ущерба для ресурса
@@ -158,7 +162,9 @@
           </a>
           <a class="product-card" href="./brakes.html">
             <img class="product-card__bg" src="./images/product-card-bg2.png" alt="">
-            <h3 class="product-card__title">Тормозные системы</h3>
+            <h3 data-aos="fade-left" class="product-card__title">
+              Тормозные системы
+            </h3>
             <p class="text-small product-card__subtitle">
               Улучшенные тормозные системы Morendi обеспечивают максимальную
               эффективность торможения даже при экстремальных нагрузках
@@ -166,7 +172,7 @@
           </a>
           <a class="product-card" href="./disks.html">
             <img class="product-card__bg" src="./images/product-card-bg3.png" alt="">
-            <h3 class="product-card__title">Диски</h3>
+            <h3 data-aos="fade-right" class="product-card__title">Диски</h3>
             <p class="text-small product-card__subtitle">
               Мы подбираем и устанавливаем диски, которые обеспечивают
               максимальную прочность, легкость и эффективность
@@ -174,7 +180,7 @@
           </a>
           <a class="product-card" href="./detailing.html">
             <img class="product-card__bg" src="./images/product-card-bg4.png" alt="">
-            <h3 class="product-card__title">Детейлинг</h3>
+            <h3 data-aos="fade-left" class="product-card__title">Детейлинг</h3>
             <p class="text-small product-card__subtitle">
               Автомобиль должен выглядеть безупречно — всегда
             </p>
@@ -182,18 +188,19 @@
         </section>
         <section class="big-frame">
           <div class="big-frame__container">
-            <p class="text-large big-frame__text">
+            <p class="text-large big-frame__text" data-aos="fade-down">
               Morendi — это больше, чем просто тюнинг. Мы создаем уникальные
               инженерные решения для премиальных автомобилей, объединяя высокие
               технологии, безопасность и страсть к скорости
             </p>
-            <a href="#" class="btn big-frame__link"> Заказать тюнинг</a>
+            <a href="#" data-type="popup-1" class="btn big-frame__link" data-aos="fade-up">
+              Заказать тюнинг</a>
           </div>
         </section>
         <section class="contact-block">
   <div class="contact-block__container">
     <div class="contact-block__info">
-      <h2 class="contact-block__headline">
+      <h2 data-aos="fade-right" class="contact-block__headline">
         Свяжитесь <br>
         с нами
       </h2>
@@ -202,7 +209,7 @@
       </p>
       <p class="contact-block__phone">8 495 796 00 96</p>
     </div>
-    <form class="contact-block__form">
+    <form class="contact-block__form" data-aos="fade-left">
       <input class="contact-block__input" type="text" class="form__input" placeholder="Ваше имя" required>
       <input class="contact-block__input" type="text" class="form__input" placeholder="Телефон" required>
       <select class="contact-block__select" name="" id="" required>
@@ -251,7 +258,7 @@
     </ul>
 
     <div class="footer__contacts">
-      <h2 class="footer__phone">8 495 796 00 96</h2>
+      <h2 data-aos="fade-right" class="footer__phone">8 495 796 00 96</h2>
       <p class="text-large footer__email">detailing@morendi.ru</p>
       <p class="text-small footer__address">
         Овражная ул., 12, рабочий посёлок Новоивановское
@@ -290,16 +297,49 @@
     </div>
 
     <div class="popup" data-popup="popup-1" data-close-overlay>
-    <div class="popup__wrapper" data-close-overlay>
-        <div class="popup__content">
-            <button class="button-close popup__close" type="button">x</button>
-            <div class="popup__body">
-                <h2>Базовый пример модального окна</h2>
-            </div>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content">
+      <div class="popup__container">
+        <button class="button-close popup__close" type="button">x</button>
+        <div class="popup__body">
+          <h2 data-aos="fade-right" class="popup__headline">
+            Заполните <br>
+            форму
+          </h2>
+          <p class="text-small popup__text">
+            и наш специалист свяжется с вами в течении полу часа
+          </p>
+          <form class="contact-block__form">
+            <input class="contact-block__input" type="text" class="form__input" placeholder="Ваше имя" required>
+            <input class="contact-block__input" type="text" class="form__input" placeholder="Телефон" required>
+            <select class="contact-block__select" name="" id="" required>
+              <option value="" disabled="disabled" selected="selected" hidden>
+                Как с вами связаться?
+              </option>
+              <option value="phone">Телефон</option>
+              <option value="email">Email</option>
+              <option value="telegram">Telegram</option>
+              <option value="whatsapp">WhatsApp</option>
+            </select>
+            <label class="text-small checkbox contact-block__checkbox">
+              <input class="checkbox__input" type="checkbox" name="agreement" required>
+              <span class="checkbox__box"></span>
+              Согласен на обработку персональных данных
+            </label>
+            <button class="btn contact-block__btn" type="submit">
+              Отправить
+            </button>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 </div>
- <script src="js/app.min.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="js/app.min.js"></script>
 
   </body>
 </html>

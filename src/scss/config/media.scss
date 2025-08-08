@@ -7,6 +7,22 @@
   }
 }
 @media (min-width: 992px) {
+  .detailing-portfolio {
+    padding-top: 80px;
+  }
+  .popup__wrapper {
+    align-items: center;
+  }
+  .popup__headline {
+    font-size: 48px;
+  }
+  .popup__close {
+    right: -63px;
+  }
+  .popup__text {
+    margin: 30px 0 40px;
+    font-size: 22px;
+  }
   .big-frame.big-frame--contacts {
     padding: 263px 0 303px;
     .big-frame__text {

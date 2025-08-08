@@ -1,6 +1,7 @@
 .popup {
   $white-100: #fff;
-
+  backdrop-filter: blur(14px);
+  background-color: #000000b2;
   position: fixed;
   inset: 0;
   width: 100%;
@@ -8,10 +9,6 @@
   opacity: 0;
   overflow-y: auto;
   pointer-events: none;
-
-  /** Установить свои значения */
-  padding: rem(30) rem(10);
-  background-color: rgba(#000, 50%);
   z-index: 2000;
   transition: opacity 0.4s ease-in-out;
 
@@ -28,7 +25,8 @@
   // .popup__wrapper
   &__wrapper {
     display: flex;
-    align-items: center;
+    // align-items: center;
+    padding-top: 36px;
     min-height: 100%;
   }
 
@@ -38,10 +36,7 @@
     width: 100%;
     margin: 0 auto;
 
-    /** Установить свои значения */
-    padding: rem(30) rem(50);
-    max-width: rem(690);
-    background-color: $white-100;
+    max-width: rem(520);
     transform: translateY(rem(-200));
     opacity: 0;
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
@@ -52,7 +47,7 @@
     position: absolute;
 
     /** Установить свои значения */
-    top: rem(20);
+    top: rem(-20);
     right: rem(20);
     width: rem(40);
     height: rem(40);
@@ -60,7 +55,22 @@
     justify-content: center;
     align-items: center;
     background: transparent;
-    color: #000;
+    color: #ffffff80;
     border-radius: rem(8);
+  }
+
+  &__headline {
+    font-size: 24px;
+  }
+  &__text {
+    margin: 16px 0 32px;
+  }
+  .contact-block__form {
+  }
+  .contact-block__input {
+  }
+  .contact-block__select {
+  }
+  .contact-block__checkbox {
   }
 }
