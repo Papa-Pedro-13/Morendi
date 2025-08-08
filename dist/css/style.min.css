@@ -1373,6 +1373,10 @@ h1 {
   padding-top: 40px;
 }
 
+video {
+  object-fit: cover;
+}
+
 @media (min-width: 768px) {
   .slider-section-slide__img {
     max-height: 700px;
