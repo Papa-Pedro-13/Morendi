@@ -8,7 +8,7 @@
  */
 // import MousePRLX from './libs/parallaxMouse'
 // import AOS from 'aos'
-// import Swiper, { Navigation, Pagination } from 'swiper';
+// import Swiper from 'swiper';
 
 import BaseHelpers from './helpers/BaseHelpers.js';
 import PopupManager from './modules/PopupManager';
@@ -51,14 +51,119 @@ new BurgerMenu().init();
  * */
 // new MousePRLX();
 
+import Splide from '@splidejs/splide';
+document.addEventListener('DOMContentLoaded', () => {
+  const videoBlocks = document.querySelectorAll('.video-block');
+
+  videoBlocks.forEach((block) => {
+    const video = block.querySelector('.video-block__player');
+    const playBtn = block.querySelector('.video-block__play-btn');
+
+    // Клик по кастомной кнопке
+    playBtn.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+
+    // Синхронизация кнопки с состоянием видео
+    video.addEventListener('play', () => {
+      playBtn.style.opacity = '0';
+      playBtn.style.pointerEvents = 'none';
+    });
+    video.addEventListener('pause', () => {
+      playBtn.style.opacity = '1';
+      playBtn.style.pointerEvents = 'auto';
+    });
+
+    // Клик по видео (если controls не перехватили)
+    video.addEventListener('click', (e) => {
+      e.preventDefault(); // Попытка избежать конфликта с controls
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  });
+});
+if (document.querySelector('.portfolio__slider')) {
+  new Splide('.portfolio__slider', {
+    type: 'fade',
+    rewind: true,
+  }).mount();
+}
+if (document.querySelector('.slider-section__slider')) {
+  new Splide('.slider-section__slider', {
+    type: 'fade',
+    rewind: true,
+  }).mount();
+}
+if (document.querySelector('.step-slider__slider')) {
+  new Splide('.step-slider__slider', {
+    type: 'fade',
+    rewind: true,
+    mediaQuery: 'min',
+    breakpoints: {
+      992: {
+        destroy: true,
+      },
+    },
+  }).mount();
+}
+if (document.querySelector('.popular-reviews__slider')) {
+  var splide2 = new Splide('.popular-reviews__slider', {
+    type: 'slide',
+    rewind: true,
+    mediaQuery: 'min',
+    gap: 16,
+    breakpoints: {
+      768: {
+        perPage: 2,
+        perMove: 1,
+      },
+      1024: {
+        perPage: 3,
+      },
+      1240: {
+        destroy: true,
+      },
+    },
+  });
+  splide2.mount();
+}
+if (document.querySelector('.reviews__slider')) {
+  var splide3 = new Splide('.reviews__slider', {
+    type: 'slide',
+    rewind: true,
+    mediaQuery: 'min',
+    gap: 16,
+    breakpoints: {
+      768: {
+        perPage: 2,
+        perMove: 1,
+      },
+      1024: {
+        perPage: 3,
+      },
+      1240: {
+        destroy: true,
+      },
+    },
+  });
+  splide3.mount();
+}
+
 new Tabs('tabs-example', {
-	onChange: (data) => {
-		console.log(data);
-	},
+  onChange: (data) => {
+    console.log(data);
+  },
 });
 
 new Accordion('.accordion', {
-	shouldOpenAll: false, // true
-	defaultOpen: [], // [0,1]
-	collapsedClass: 'open',
+  shouldOpenAll: false, // true
+  defaultOpen: [], // [0,1]
+  collapsedClass: 'open',
 });
