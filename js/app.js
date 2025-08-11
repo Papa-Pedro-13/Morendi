@@ -196,7 +196,7 @@ bodyLock(true);
 let animationCount = 0;
 mask.addEventListener('animationiteration', () => {
   animationCount++;
-  if (animationCount >= 2) {
+  if (animationCount >= 3) {
     preloader.classList.add('close');
     bodyLock(false);
   }
