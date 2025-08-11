@@ -104,6 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+if (document.querySelector('.gallery__slider')) {
+  new Splide('.gallery__slider', {
+    type: 'fade',
+    rewind: true,
+  }).mount();
+}
 if (document.querySelector('.portfolio__slider')) {
   new Splide('.portfolio__slider', {
     type: 'fade',
@@ -186,11 +192,11 @@ const preloader = document.querySelector('.preloader-container');
 const mask = document.querySelector('.preloader-mask');
 
 bodyLock(true);
-// После 3 циклов анимации убираем прелоадер и ЧБ фильтр
+// После 2 циклов анимации убираем прелоадер и ЧБ фильтр
 let animationCount = 0;
 mask.addEventListener('animationiteration', () => {
   animationCount++;
-  if (animationCount >= 3) {
+  if (animationCount >= 2) {
     preloader.classList.add('close');
     bodyLock(false);
   }

@@ -7,6 +7,27 @@
   }
 }
 @media (min-width: 992px) {
+  .gallery {
+    padding: 80px 0;
+  }
+  .gallery__slider .splide__arrows {
+    padding: 0 80px;
+  }
+  .gallery__img {
+    max-height: 752px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .offer-project {
+    .offer__headline {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    .offer__container {
+      grid-template-columns: 795px auto;
+    }
+  }
+
   .detailing-portfolio {
     padding-top: 80px;
   }
