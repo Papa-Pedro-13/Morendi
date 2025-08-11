@@ -906,7 +906,7 @@ h2 {
 }
 
 .no-webp .hero::before{
-  background-image: url(../../images/hero-bg.jpg); }
+  background-image: url(../images/hero-bg.jpg); }
 
 .hero::before {
   content: "";
@@ -1281,7 +1281,7 @@ h2 {
 }
 
 .no-webp .big-frame::before{
-  background-image: url(../../images/big-frame.jpg); }
+  background-image: url(../images/big-frame.jpg); }
 
 .big-frame::before {
   content: "";
@@ -1972,7 +1972,7 @@ h1 {
 }
 
 .no-webp .big-frame--contacts::before{
-  background-image: url(../../images/big-frame2.jpg); }
+  background-image: url(../images/big-frame2.jpg); }
 
 .contacts__map-block {
   height: 472px;
@@ -2003,7 +2003,7 @@ h1 {
 }
 
 .no-webp .contacts__map-block::before{
-  background-image: url(../../images/map.png); }
+  background-image: url(../images/map.png); }
 
 .contacts__map-block::before {
   content: "";
@@ -2291,6 +2291,27 @@ video {
   }
 }
 
+.gallery {
+  padding: 16px 0;
+}
+
+.gallery__slider .splide__arrows {
+  top: 50%;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.advantages--project .advantages__label {
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 @media (min-width: 768px) {
   .slider-section-slide__img {
     max-height: 700px;
@@ -2302,6 +2323,30 @@ video {
 }
 
 @media (min-width: 992px) {
+  .gallery {
+    padding: 80px 0;
+  }
+
+  .gallery__slider .splide__arrows {
+    padding: 0 80px;
+  }
+
+  .gallery__img {
+    max-height: 752px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .offer-project .offer__headline {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+
+  .offer-project .offer__container {
+    grid-template-columns: 795px auto;
+  }
+
   .detailing-portfolio {
     padding-top: 80px;
   }
@@ -3047,10 +3092,10 @@ video {
   }
 }
 
-.webp .hero::before{ background-image: url(../../images/hero-bg.webp); }
+.webp .hero::before{ background-image: url(../images/hero-bg.webp); }
 
-.webp .big-frame::before{ background-image: url(../../images/big-frame.webp); }
+.webp .big-frame::before{ background-image: url(../images/big-frame.webp); }
 
-.webp .big-frame--contacts::before{ background-image: url(../../images/big-frame2.webp); }
+.webp .big-frame--contacts::before{ background-image: url(../images/big-frame2.webp); }
 
-.webp .contacts__map-block::before{ background-image: url(../../images/map.webp); }
+.webp .contacts__map-block::before{ background-image: url(../images/map.webp); }
