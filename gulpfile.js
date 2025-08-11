@@ -31,7 +31,7 @@ function watcher() {
   gulp.watch(filePaths.watch.html, handleHTML);
   gulp.watch(filePaths.watch.scss, handleSCSS);
   gulp.watch(filePaths.watch.js, handleJS);
-  gulp.watch(filePaths.watch.images,handleImages);
+  gulp.watch(filePaths.watch.images, handleImages);
 }
 
 /**
@@ -42,7 +42,15 @@ const fonts = gulp.series(otfToTtf, ttfToWoff, fontStyle);
 /**
  * Параллельные задачи в режиме разработки
  * */
-const devTasks = gulp.parallel(copy, copyRootFiles, createSvgSprite, handleHTML, handleSCSS, handleJS, handleImages);
+const devTasks = gulp.parallel(
+  copy,
+  copyRootFiles,
+  createSvgSprite,
+  handleHTML,
+  handleSCSS,
+  handleJS,
+  handleImages
+);
 
 /**
  * Основные задачи
@@ -62,6 +70,9 @@ const deployFTP = gulp.series(reset, mainTasks, ftpDeploy);
  * */
 gulp.task('default', dev);
 
+gulp.task('deploy', function () {
+  return gulp.src('./dist/**/*').pipe(deploy());
+});
 /**
  * Экспорт сценариев
  * */
