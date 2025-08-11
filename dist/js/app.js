@@ -66,7 +66,6 @@ function bodyLock(isLock) {
 }
 
 import Splide from '@splidejs/splide';
-import Popup from './helpers/Popup.js';
 document.addEventListener('DOMContentLoaded', () => {
   const videoBlocks = document.querySelectorAll('.video-block');
 
@@ -177,17 +176,12 @@ if (document.querySelector('.reviews__slider')) {
   splide3.mount();
 }
 
-new Tabs('tabs-example', {
-  onChange: (data) => {
-    console.log(data);
-  },
-});
-
 new Accordion('.accordion', {
   shouldOpenAll: false, // true
   defaultOpen: [], // [0,1]
   collapsedClass: 'open',
 });
+
 const preloader = document.querySelector('.preloader-container');
 const mask = document.querySelector('.preloader-mask');
 
@@ -196,7 +190,7 @@ bodyLock(true);
 let animationCount = 0;
 mask.addEventListener('animationiteration', () => {
   animationCount++;
-  if (animationCount >= 2) {
+  if (animationCount >= 3) {
     preloader.classList.add('close');
     bodyLock(false);
   }
