@@ -1,3 +1,5 @@
+@@include('./preloader.html', {})
+
 <header class="header">
   <div class="header__container">
     <a href="/" class="header__logo logo">
@@ -6,22 +8,42 @@
     <nav class="header__menu menu">@@include('./menuList.html', {})</nav>
     @@include('./iconMenu.html', {})
   </div>
-  <a class="header__contacts" href="#" data-type="popup-1"
-    >Cвязаться с нами
-    <svg
-      width="14"
-      height="14"
-      viewBox="0 0 14 14"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M2 6L13 6M13 6L8.14706 1M13 6L8.14706 11"
-        stroke="white"
-        stroke-opacity="0.8"
-      />
-    </svg>
-  </a>
+  <button class="header__contacts" data-type="popup-1">
+    <p class="contacts__title">
+      <span class="contacts__title-one">Cвязаться с нами</span>
+      <span class="contacts__title-two">Cвязаться с нами</span>
+    </p>
+    <div class="contacts__icon">
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 14 14"
+        class="contacts__icon-one"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 6L13 6M13 6L8.14706 1M13 6L8.14706 11"
+          stroke="white"
+          stroke-opacity="0.8"
+        />
+      </svg>
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 14 14"
+        class="contacts__icon-two"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 6L13 6M13 6L8.14706 1M13 6L8.14706 11"
+          stroke="white"
+          stroke-opacity="0.8"
+        />
+      </svg>
+    </div>
+  </button>
 </header>
 <div class="mobile-menu">
   <div class="mobile-menu__close icon-menu">
@@ -43,7 +65,7 @@
     @@include('./menuList.html', {})
 
     <div class="mobile-menu__contacts">
-      <h2 data-aos="fade-right" class="mobile-menu__phone">8 495 796 00 96</h2>
+      <h2 data-aos="fade-up" class="mobile-menu__phone">8 495 796 00 96</h2>
       <p class="mobile-menu__email text-large">detailing@morendi.ru</p>
       <p class="mobile-menu__address text-small">
         Овражная ул., 12, рабочий посёлок Новоивановское

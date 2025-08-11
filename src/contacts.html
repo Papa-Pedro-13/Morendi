@@ -15,9 +15,7 @@
         <section class="contacts">
           <div class="contacts__container">
             <div class="footer__contacts">
-              <h2 data-aos="fade-right" class="footer__phone">
-                8 495 796 00 96
-              </h2>
+              <h2 data-aos="fade-up" class="footer__phone">8 495 796 00 96</h2>
               <p class="footer__email text-large">detailing@morendi.ru</p>
               @@include('./html/socialIcons.html', {})
               <p class="contacts__desc text-small">
@@ -29,7 +27,7 @@
                 Суббота и Воскресенье —  по предварительной записи
               </p>
             </div>
-            <div class="contacts__map-block">
+            <a class="contacts__map-block" href="#">
               <svg
                 width="24"
                 height="30"
@@ -43,8 +41,10 @@
                   fill="white"
                 />
               </svg>
-              <a href="#" class="contacts__btn btn"> Построить маршрут </a>
-            </div>
+              <button class="contacts__btn btn">
+                <span> Построить маршрут </span>
+              </button>
+            </a>
           </div>
         </section>
         <section class="big-frame big-frame--contacts">

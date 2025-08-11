@@ -19,7 +19,13 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
+      <div class="preloader-container">
+  <img src="../images/footer-logo.png" alt="Логотип" class="logo-img" id="logo">
+  <div class="preloader-mask"></div>
+</div>
+
+
+<header class="header">
   <div class="header__container">
     <a href="/" class="header__logo logo">
       <img src="../images/Logo.png" alt="">
@@ -48,11 +54,20 @@
     <button class="icon-menu header__burger"></button>
 
   </div>
-  <a class="header__contacts" href="#" data-type="popup-1">Cвязаться с нами
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M2 6L13 6M13 6L8.14706 1M13 6L8.14706 11" stroke="white" stroke-opacity="0.8"/>
-    </svg>
-  </a>
+  <button class="header__contacts" data-type="popup-1">
+    <p class="contacts__title">
+      <span class="contacts__title-one">Cвязаться с нами</span>
+      <span class="contacts__title-two">Cвязаться с нами</span>
+    </p>
+    <div class="contacts__icon">
+      <svg width="14" height="14" viewBox="0 0 14 14" class="contacts__icon-one" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 6L13 6M13 6L8.14706 1M13 6L8.14706 11" stroke="white" stroke-opacity="0.8"/>
+      </svg>
+      <svg width="14" height="14" viewBox="0 0 14 14" class="contacts__icon-two" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 6L13 6M13 6L8.14706 1M13 6L8.14706 11" stroke="white" stroke-opacity="0.8"/>
+      </svg>
+    </div>
+  </button>
 </header>
 <div class="mobile-menu">
   <div class="icon-menu mobile-menu__close">
@@ -84,7 +99,7 @@
 
 
     <div class="mobile-menu__contacts">
-      <h2 data-aos="fade-right" class="mobile-menu__phone">8 495 796 00 96</h2>
+      <h2 data-aos="fade-up" class="mobile-menu__phone">8 495 796 00 96</h2>
       <p class="text-large mobile-menu__email">detailing@morendi.ru</p>
       <p class="text-small mobile-menu__address">
         Овражная ул., 12, рабочий посёлок Новоивановское
@@ -123,9 +138,7 @@
         <section class="contacts">
           <div class="contacts__container">
             <div class="footer__contacts">
-              <h2 data-aos="fade-right" class="footer__phone">
-                8 495 796 00 96
-              </h2>
+              <h2 data-aos="fade-up" class="footer__phone">8 495 796 00 96</h2>
               <p class="text-large footer__email">detailing@morendi.ru</p>
               <div class="socials">
   <a href="#" class="socials__item">
@@ -156,12 +169,14 @@
                 Суббота и Воскресенье —  по предварительной записи
               </p>
             </div>
-            <div class="contacts__map-block">
+            <a class="contacts__map-block" href="#">
               <svg width="24" height="30" viewBox="0 0 24 30" fill="none" class="contacts__map-icon" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.0004 0.833344C5.75152 0.833344 0.667108 5.91776 0.667108 12.1596C0.626024 21.29 11.5698 28.8607 12.0004 29.1667C12.0004 29.1667 23.3749 21.29 23.3338 12.1667C23.3338 5.91776 18.2494 0.833344 12.0004 0.833344ZM12.0004 17.8333C8.86961 17.8333 6.33377 15.2975 6.33377 12.1667C6.33377 9.03584 8.86961 6.50001 12.0004 6.50001C15.1313 6.50001 17.6671 9.03584 17.6671 12.1667C17.6671 15.2975 15.1313 17.8333 12.0004 17.8333Z" fill="white"/>
               </svg>
-              <a href="#" class="btn contacts__btn"> Построить маршрут </a>
-            </div>
+              <button class="btn contacts__btn">
+                <span> Построить маршрут </span>
+              </button>
+            </a>
           </div>
         </section>
         <section class="big-frame big-frame--contacts">
@@ -178,7 +193,7 @@
         <section class="contact-block">
   <div class="contact-block__container">
     <div class="contact-block__info">
-      <h2 data-aos="fade-right" class="contact-block__headline">
+      <h2 data-aos="fade-up" class="contact-block__headline">
         Свяжитесь <br>
         с нами
       </h2>
@@ -187,7 +202,7 @@
       </p>
       <p class="contact-block__phone">8 495 796 00 96</p>
     </div>
-    <form class="contact-block__form" data-aos="fade-left">
+    <form class="contact-block__form" data-aos="fade-up">
       <input class="contact-block__input" type="text" class="form__input" placeholder="Ваше имя" required>
       <input class="contact-block__input" type="text" class="form__input" placeholder="Телефон" required>
       <select class="contact-block__select" name="" id="" required>
@@ -202,7 +217,9 @@
         <span class="checkbox__box"></span>
         Согласен на обработку персональных данных
       </label>
-      <button class="btn contact-block__btn" type="submit">Отправить</button>
+      <button class="btn contact-block__btn" type="submit">
+        <span> Отправить </span>
+      </button>
     </form>
   </div>
 </section>
@@ -236,7 +253,7 @@
     </ul>
 
     <div class="footer__contacts">
-      <h2 data-aos="fade-right" class="footer__phone">8 495 796 00 96</h2>
+      <h2 data-aos="fade-up" class="footer__phone">8 495 796 00 96</h2>
       <p class="text-large footer__email">detailing@morendi.ru</p>
       <p class="text-small footer__address">
         Овражная ул., 12, рабочий посёлок Новоивановское
@@ -280,7 +297,7 @@
       <div class="popup__container">
         <button class="button-close popup__close" type="button">x</button>
         <div class="popup__body">
-          <h2 data-aos="fade-right" class="popup__headline">
+          <h2 data-aos="fade-up" class="popup__headline">
             Заполните <br>
             форму
           </h2>
@@ -305,7 +322,7 @@
               Согласен на обработку персональных данных
             </label>
             <button class="btn contact-block__btn" type="submit">
-              Отправить
+              <span> Отправить </span>
             </button>
           </form>
         </div>

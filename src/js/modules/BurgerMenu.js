@@ -24,6 +24,7 @@ class BurgerMenu extends Popup {
   /**
    * Open the menu.
    */
+
   menuOpen() {
     this.toggleBodyLock(true);
     this.html.classList.add('menu-open');

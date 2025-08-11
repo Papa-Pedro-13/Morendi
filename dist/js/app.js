@@ -51,7 +51,22 @@ new BurgerMenu().init();
  * */
 // new MousePRLX();
 
+function bodyLock(isLock) {
+  const pageWrapper = document.querySelector('.page');
+  const lockPaddingValue = window.innerWidth - pageWrapper.offsetWidth;
+  const lockPaddingElements = document.querySelectorAll('[data-lp]');
+  if (lockPaddingElements) {
+    lockPaddingElements.forEach((element) => {
+      element.style.paddingRight = isLock ? `${lockPaddingValue}px` : '0px';
+    });
+  }
+
+  document.body.style.paddingRight = isLock ? `${lockPaddingValue}px` : '0px';
+  document.documentElement.classList.toggle('lock', isLock);
+}
+
 import Splide from '@splidejs/splide';
+import Popup from './helpers/Popup.js';
 document.addEventListener('DOMContentLoaded', () => {
   const videoBlocks = document.querySelectorAll('.video-block');
 
@@ -166,4 +181,17 @@ new Accordion('.accordion', {
   shouldOpenAll: false, // true
   defaultOpen: [], // [0,1]
   collapsedClass: 'open',
+});
+const preloader = document.querySelector('.preloader-container');
+const mask = document.querySelector('.preloader-mask');
+
+bodyLock(true);
+// После 3 циклов анимации убираем прелоадер и ЧБ фильтр
+let animationCount = 0;
+mask.addEventListener('animationiteration', () => {
+  animationCount++;
+  if (animationCount >= 3) {
+    preloader.classList.add('close');
+    bodyLock(false);
+  }
 });
